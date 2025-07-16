@@ -1,0 +1,103 @@
+{
+  user: 'demet',
+  message: 'denemeee',
+  timestamp: '2025-07-14T05:36:05.105Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'deniz',
+  message: '17',
+  timestamp: '2025-07-14T05:36:15.808Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'eylüll',
+  timestamp: '2025-07-14T05:36:44.816Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'plsss',
+  timestamp: '2025-07-14T05:49:37.346Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'plsss',
+  timestamp: '2025-07-14T05:49:45.032Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'denemeeeeeee',
+  timestamp: '2025-07-14T05:50:10.632Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: TypeError: socket.broadcast.emitt is not a function
+      at Socket.<anonymous> (/Users/demetdeniz/Desktop/websocket-angular/server.js:34:26)
+      at Socket.emit (node:events:518:28)
+      at Socket.emitUntyped (/Users/demetdeniz/Desktop/websocket-angular/node_modules/socket.io/dist/typed-events.js:69:22)
+      at /Users/demetdeniz/Desktop/websocket-angular/node_modules/socket.io/dist/socket.js:697:39
+      at process.processTicksAndRejections (node:internal/process/task_queues:85:11),
+  timestamp: '2025-07-14T05:53:21.734Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'deniz',
+  message: '17',
+  timestamp: '2025-07-14T07:57:22.166Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'merhaba',
+  timestamp: '2025-07-14T11:21:01.477Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'deniz',
+  message: 'şeker',
+  timestamp: '2025-07-14T11:21:36.393Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'emre',
+  message: 'olips',
+  timestamp: '2025-07-14T11:22:36.276Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'hi guyss',
+  timestamp: '2025-07-14T12:22:21.883Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'ahmet',
+  message: 'toplantımızvar',
+  timestamp: '2025-07-14T12:24:28.686Z',
+  level: 'debug',
+  service: 'ChatService'
+}
+{
+  user: 'demet',
+  message: 'kek',
+  timestamp: '2025-07-14T12:24:40.492Z',
+  level: 'debug',
+  service: 'ChatService'
+}

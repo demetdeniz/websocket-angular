@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { ChatComponent } from './chat/chat.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [ChatComponent, HttpClientModule, FormsModule],
+  template: `<app-chat></app-chat>`,
 })
-export class App {
-  protected title = 'websocket-angular';
-}
+export class App {}

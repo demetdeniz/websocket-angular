@@ -52,18 +52,25 @@
           },
           "defaultConfiguration": "production"
         },
-        "serve": {
-          "builder": "@angular/build:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "websocket-angular:build:production"
-            },
-            "development": {
-              "buildTarget": "websocket-angular:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
+      "serve": {
+  "builder": "@angular/build:dev-server",
+  "options": {
+  
+ 
+    "host": "192.168.137.78",
+    "port": 4200
+  },
+  "configurations": {
+    "production": {
+      "buildTarget": "websocket-angular:build:production"
+    },
+    "development": {
+      "buildTarget": "websocket-angular:build:development"
+    }
+  },
+  "defaultConfiguration": "development"
+},
+
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
         },
@@ -88,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

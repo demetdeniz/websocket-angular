@@ -1,0 +1,79 @@
+<div class="main">
+  <div class="chat-card">
+    <h2 class="title">Chat App</h2>
+
+    <div class="name">
+      <input
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Enter your name"
+        class="name-input"
+      />
+      <!-- ⬇️ GİRİŞ YAP BUTONU EKLENDİ -->
+      <button (click)="loginWithUsername()" class="login-button">
+        Giriş Yap
+      </button>
+    </div>
+
+    <!-- Mesaj kutusu her zaman görünsün -->
+    <div class="message-container">
+      <ul id="message-container">
+        <li
+          *ngFor="let msg of messages"
+          [ngClass]="{
+            'message-right': msg.name === name,
+            'message-left': msg.name !== name
+          }"
+        >
+          <p
+            class="message"
+            [ngClass]="{
+              'own-message': msg.name === name,
+              'other-message': msg.name !== name
+            }"
+          >
+            {{ msg.message }}
+            <br />
+            <span>
+              <i class="fas fa-user"></i> {{ msg.name }} ⏺️ {{ msg.dateTime }}
+            </span>
+          </p>
+        </li>
+
+        <li class="message-feedback" *ngIf="typingMessage">
+          <p class="feedback">{{ typingMessage }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <form class="message-form" (ngSubmit)="sendMessage()">
+      <input
+        type="text"
+        name="message"
+        [(ngModel)]="message"
+        class="message-input"
+        (keydown)="sendTyping()"
+        required
+      />
+      <button type="submit" class="send-button">
+        send <span><i class="fas fa-paper-plane"></i></span>
+      </button>
+    </form>
+
+    <!-- Bildirim Popup -->
+    <div class="notification-popup" *ngIf="showPopup">
+      <div class="popup-content">
+        <h3>Mesajlar</h3>
+        <p>
+          Masaüstü bildirimlerimize izin vererek sohbet mesajlarını anında alın.
+        </p>
+        <div class="popup-buttons">
+          <button (click)="declinePermission()">Daha Sonra</button>
+          <button (click)="askNotificationPermission()">İzin Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="clients-total">Total Clients: {{ totalClients }}</h3>
+  </div>
+</div>
